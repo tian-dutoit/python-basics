@@ -1,2 +1,2 @@
 # python-basics
-exercises for udemy course
+Exercises for udemy course
