@@ -1,6 +1,8 @@
 def length_function(word):
     if(type(word) == int):
         return "Sorry integers don't have length"
+    elif(type(word) == float):
+        return "Sorry floats don't have length"    
     else:  
         return len(word)  
 
@@ -10,4 +12,5 @@ def temp_converter(celsius):
   
 print(length_function("hello how long is this?"))
 print(length_function(5))
+print(length_function(5.5))
 print(temp_converter(10))
