@@ -12,10 +12,17 @@ def temp_converter(celsius):
     else:
       return celsius * 9 / 5 + 32
 
+def fruits():
+    file = open("fruits.txt")
+    content = file.read()
+    file.close()
+    print(content)
+
   
 print(length_function("hello how long is this?"))
 print(length_function(5))
 print(length_function(5.5))
 print(temp_converter(10))
 print(temp_converter(-1110))
+fruits()
 
