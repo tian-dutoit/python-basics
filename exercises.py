@@ -21,7 +21,13 @@ def fruits():
 def loops():
     mylist= [1, 2, 3, 4, 5]
     for number in mylist:
-      print(number)
+        print(number)
+
+def greater():
+    mylist= [1, 2, 3, 4, 5]
+    for number in mylist:
+        if number > 2:
+            print(number)
 
   
 print(length_function("hello how long is this?"))
@@ -31,4 +37,5 @@ print(temp_converter(10))
 print(temp_converter(-1110))
 fruits()
 loops()
+greater()
 
