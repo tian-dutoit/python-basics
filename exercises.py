@@ -29,6 +29,23 @@ def greater():
         if number > 2:
             print(number)
 
+def fruits_length():
+    file = open("fruits.txt")
+    content = file.read()
+    # split = content.split() both appear to work
+    split = content.splitlines()
+    file.close()
+    for fruit in split:
+      print(len(fruit))
+
+    # file = open("fruits.txt")
+    # content = file.readlines()
+    # content = [line.strip() for line in content]
+    # file.close()
+    # for i in content:
+    #     print(len(i))
+
+
   
 print(length_function("hello how long is this?"))
 print(length_function(5))
@@ -38,4 +55,5 @@ print(temp_converter(-1110))
 fruits()
 loops()
 greater()
+fruits_length()
 
