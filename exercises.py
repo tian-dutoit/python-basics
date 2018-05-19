@@ -10,7 +10,7 @@ def temp_converter(celsius):
     if celsius < -273.15:
       return "Lowest possible temperature is -273.15 Celsius"
     else:
-      return celsius * 9 / 5 + 32
+      return float(celsius * 9 / 5 + 32)
 
 def fruits():
     file = open("fruits.txt")
@@ -45,6 +45,11 @@ def fruits_length():
     # for i in content:
     #     print(len(i))
 
+def tempiteration():
+    temperatures = [10,-20,-289,100]
+    for temperature in temperatures:
+        print(temp_converter(temperature))
+
 
   
 print(length_function("hello how long is this?"))
@@ -56,4 +61,5 @@ fruits()
 loops()
 greater()
 fruits_length()
+tempiteration()
 
