@@ -18,6 +18,11 @@ def fruits():
     file.close()
     print(content)
 
+def loops():
+    mylist= [1, 2, 3, 4, 5]
+    for number in mylist:
+      print(number)
+
   
 print(length_function("hello how long is this?"))
 print(length_function(5))
@@ -25,4 +30,5 @@ print(length_function(5.5))
 print(temp_converter(10))
 print(temp_converter(-1110))
 fruits()
+loops()
 
