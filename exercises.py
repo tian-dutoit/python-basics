@@ -61,7 +61,17 @@ def iterations():
     a = ['a', 'b', 'c']
     b = [1, 2, 3]
     for i, j in zip(a, b):
-        print("%s is %s" % (i, j))    
+        print("%s is %s" % (i, j)) 
+
+def output():
+    temperatures = [10,-20,-289,100]
+    with open("output.py", "w") as myfile:
+        for temperature in temperatures:
+            if temperature > -273.15:
+                converted = temperature * 9 / 5 + 32
+                myfile.write(str(converted) + "\n")  
+
+# Could make it so list and filepath are paramaters of the function 
   
 print(length_function("hello how long is this?"))
 print(length_function(5))
@@ -75,4 +85,5 @@ fruits_length()
 tempiteration()
 createandread()
 iterations()
+output()
 
