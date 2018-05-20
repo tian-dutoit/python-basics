@@ -50,6 +50,12 @@ def tempiteration():
     for temperature in temperatures:
         print(temp_converter(temperature))
 
+def createandread():
+    numbers = [1, 2, 3]
+    file = open('open.py', 'w')
+    for number in numbers:
+        file.write(str(number) + "\n")
+    file.close()
 
   
 print(length_function("hello how long is this?"))
@@ -62,4 +68,5 @@ loops()
 greater()
 fruits_length()
 tempiteration()
+createandread()
 
