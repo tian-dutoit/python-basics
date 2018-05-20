@@ -57,6 +57,11 @@ def createandread():
         file.write(str(number) + "\n")
     file.close()
 
+def iterations():
+    a = ['a', 'b', 'c']
+    b = [1, 2, 3]
+    for i, j in zip(a, b):
+        print("%s is %s" % (i, j))    
   
 print(length_function("hello how long is this?"))
 print(length_function(5))
@@ -69,4 +74,5 @@ greater()
 fruits_length()
 tempiteration()
 createandread()
+iterations()
 
